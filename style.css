@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --first: rgb(167, 166, 173);
+    --second:rgb(211, 223, 195);
+    --third: rgb(123, 123, 139);
+    --Fourth:rgb(102, 102, 122);
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    color: rgb(6, 6, 6);
+    
+    
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.navbar{
+    color: rgb(30, 10, 10);
+    
+}
+
+
+
+header{
+    background-color: var(--first);
+}
+
+
+#About-Me{
+    
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--second);
+    border-radius: 5px;
+}
+
+#Skills{
+    background-color: var(--third);
+    margin-bottom: 20px;
+    
+}
+
+#Projects{
+    background-color: var(--Fourth);
+    margin-bottom: 20px;
+}
+
+#Contacts{
+    
+}
