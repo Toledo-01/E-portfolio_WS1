@@ -1,43 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --first: rgb(167, 166, 173);
-    --second:rgb(211, 223, 195);
+    --second: rgb(211, 223, 195);
     --third: rgb(123, 123, 139);
-    --Fourth:rgb(102, 102, 122);
+    --Fourth: rgb(102, 102, 122);
 }
 
-h1{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+h1 {
     font-size: 50px;
 }
 
-h2{
+h2 {
     color: rgb(6, 6, 6);
-    
-    
 }
 
-body{
-    background-color: antiquewhite;
+.logo img {
+    border-radius: 50%;
+    height: 5%;
+    width: 5%;
+    align-items: left;
 }
 
-.navbar{
+.profile img {
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+}
+
+.navbar {
     color: rgb(30, 10, 10);
-    
 }
 
+.nav-links {
+    align-content: left;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-header{
+header {
     background-color: var(--first);
 }
 
+.skills ul li {}
 
-#About-Me{
-    
+#About-Me {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -45,17 +82,21 @@ header{
     border-radius: 5px;
 }
 
-#Skills{
+#Skills {
+    display: flex;
     background-color: var(--third);
     margin-bottom: 20px;
-    
 }
 
-#Projects{
+#Projects {
     background-color: var(--Fourth);
     margin-bottom: 20px;
 }
 
-#Contacts{
-    
-}
+#Contacts {}
+
+@media(max-width:992px) {}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {}
