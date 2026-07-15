@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maria Fernanda C. Toledo | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-    <header class="header">
 
-        <section class="navbar">
-            <ul class="nav-links">
-                <div class="logo">
-                    <img src="https://thumbs.dreamstime.com/b/creative-simple-dragons-silhouettes-logo-stylized-vector-illustrations-simple-dragons-silhouettes-logo-130475058.jpg">
-                </div>
-                <li><a href="#Home">Home</a> </li>
-                <li><a href="#About-Me">About</a> </li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a> </li>
-                <li><a href="#Contacts">Contacts</a> </li>
-            </ul>
-        </section>
+    <!--  HEADER and NAVBAR -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <img src="https://thumbs.dreamstime.com/b/creative-simple-dragons-silhouettes-logo-stylized-vector-illustrations-simple-dragons-silhouettes-logo-130475058.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About-Me">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="Home">
+    <!-- HOME SECTION -->
+    <section id="Home" class="Home">
+        <div class="container">
+            <h1>Maria Fernanda C. Toledo</h1>
+            <p id="course">Bachelor Of Science in Information Technology</p>
+            <p id="tagline">Learn, Develop, and Deploy</p>
 
-        <div class="profile">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpB70R8mtoSofMRkYwpHQNBArJriqT7USlf_2Zs9YUSw&s=10">
+
+            <button onclick="changeHeading()">Change Heading</button>
+            <button onclick="changeStyle()">Change Style</button>
+            <button onclick="toogleTheme()">Toogle Theme</button>
+            <button onclick="showInfo()">Show Info</button>
         </div>
-        <h1> Maria Fernanda C. Toledo</h1>
-        <p id="course">Bachelor Of Science in Information Technology</p>
-        <p id="tagline">Learn, Develop, and Deploy</p>
-
     </section>
 
-
+    <!-- ABOUT SECTION -->
     <section id="About-Me">
-        <div class="Container">
+        <div class="container">
             <h2>About Me</h2>
-            <p id="bio"> A didicated Student of Holy Child Central Colleges Inc. Pursuing Bachelor of Science in Information Technology. My mission is to Develop a user-friendly applications or websites that is accessible anywhere. Approachable and always avialable.</p>
-
-
-            <div class="Education">
-                <h2>Education Background</h2>
-                <h3>Elementary</h3>
-                <li>Proper Ned Elementary School S.Y 2017-2018</li>
-                <h3>Junior High School</h3>
-                <li>Proper Ned National High School S.Y 2020-2021</li>
-                <h3>Senior High School</h3>
-                <li>Proper Ned National High School S.Y 2024-2025</li>
-                <h3>College</h3>
-                <li>Holy Child Central Colleges Inc. 2024- Up to Date </li>
+            <div class="about-content">
+                <div class="profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpB70R8mtoSofMRkYwpHQNBArJriqT7USlf_2Zs9YUSw&s=10" alt="Profile Photo">
+                </div>
+                <div class="about-text">
+                    <p id="bio">A dedicated Student of Holy Child Central Colleges Inc. Pursuing Bachelor of Science in Information Technology. My mission is to Develop a user-friendly applications or websites that is accessible anywhere. Approachable and always available.</p>
+                    <div class="Education">
+                        <h3>Education Background</h3>
+                        <ul>
+                            <li><strong>Elementary:</strong> Proper Ned Elementary School S.Y 2017-2018</li>
+                            <li><strong>Junior High School:</strong> Proper Ned National High School S.Y 2020-2021</li>
+                            <li><strong>Senior High School:</strong> Proper Ned National High School S.Y 2024-2025</li>
+                            <li><strong>College:</strong> Holy Child Central Colleges Inc. 2024- Up to Date</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="Skills">
-        <div class="skills">
+        <div class="container">
             <h2>My Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>Microsoft Office</li>
-                <li>Communication Skills</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="Projects">
-        <div class="card">
-            <h2>Projects</h2>
-            <div class="project1">
-                <h2>Portfolio</h2>
-                <p>This Portfolio is for short information About our background as a Student</p>
+            <div class="skills-grid">
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">Microsoft Office</div>
+                <div class="skill-card">Communication Skills</div>
             </div>
-            <div class="project2"></div>
-            <h2>Clinic-File Management System</h2>
-            <p>This system is a web-based, use for data management and can help the user to schedule their appointments online with less hussle.</p>
-        </div>
-        <div class="project3"></div>
-        <h2>Library Management System</h2>
-        <p>This Library Management System is a user-friendly system that is acccessible for students to read books, borrow and return.</p>
-        </div>
-
         </div>
     </section>
 
+    <!-- PROJECTS SECTION  -->
+    <section id="Projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVsyzDEeaQDdMs-5oP8nuL3ZZ22u39j_o-sTmTKLPv1w&s" alt="Portfolio Project">
+                    <h3>Portfolio</h3>
+                    <p>This Portfolio is for short information About our background as a Student</p>
+                    <p><strong>Technologies:</strong> HTML, CSS</p>
+                
+                </div>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEHBWsMzavAPg4gLLSD1QlcHGxhnodrjj2PouiVmSPkuksQleKmwTV2XI&s=10" alt="Clinic System">
+                    <h3>Clinic File Management System</h3>
+                    <p>This system is a web-based, use for data management and can help the user to schedule their appointments online with less hassle.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, Python</p>
+                    
+                </div>
+                <div class="project-card">
+                    <img src="https://storage.googleapis.com/e-object-409003.firebasestorage.app/manage-library-system-online-8t23pd13.jpg" alt="Library System">
+                    <h3>Library Management System</h3>
+                    <p>This Library Management System is a user-friendly system that is accessible for students to read books, borrow and return.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, Python</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
     <section id="Contacts">
-        <div class="Container">
-            <h2> Lets work Together</h2>
-            <h3>Phone</h3>
-            <p>09632846382</p>
-            <h3>Email</h3>
-            <p>mt6768471@gmail.com</p>
+        <div class="container">
+            <h2>Lets Work Together!</h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 09632846382</p>
+                <p><strong>Email:</strong> mt6768471@gmail.com</p>
+            </div>
         </div>
     </section>
 
-    <section id="footer"></section>
-
+    <!-- FOOTER -->
     <footer>
-        <p>@ 2026 Maria Fernanda C. Toledo</p>
+        <p>© 2026 Maria Fernanda C. Toledo. All Rights Reserved.</p>
     </footer>
-    </section>
 
+   
+     <script src="script.js"></script>
 
 </body>
-
 </html>
