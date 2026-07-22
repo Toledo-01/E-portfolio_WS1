@@ -9,6 +9,7 @@
     --second: #408175; 
     --third: #2e4540; 
     --fourth: #0b0909; 
+    --buttons: rgb(6, 119, 153);
 } 
 
 body {
@@ -51,7 +52,7 @@ header {
     background-color: var(--fourth); 
     position: sticky;
     top: 0;
-    z-index: 100;
+  
 }
 
 .navbar { 
@@ -59,14 +60,18 @@ header {
     justify-content: space-between; 
     align-items: center;
     color: rgb(30, 10, 10);
-    padding: 10px 5%;
+    padding: 5px 5%;
+    
 }
 
 .logo img {
     border-radius: 50%; 
     height: 50px; 
-    width: 50px; 
+    width: 50px;
+   
 } 
+
+
 
 .nav-links { 
     display: flex; 
@@ -78,11 +83,11 @@ header {
     text-align: center; 
     padding: 14px 16px; 
     border-radius: 5px;
-    transition: background-color 0.3s;
+
 } 
 
 .nav-links li a:hover { 
-    background-color: #111111; 
+    background-color: var(--buttons); 
 } 
 /*Nav*/
 
@@ -118,6 +123,10 @@ header {
 
 .about-text {
     flex: 1;
+}
+
+.Education h3{
+    padding-top: 10px;
 }
 
 .Education ul {
@@ -316,10 +325,21 @@ footer {
     color: white;
 }
 
+.dark-mode header{
+    background-color: var(--first);
+}
+
+.dark-mode .nav-links li a{
+    color: var(--fourth);
+}
+
+.dark-mode .nav-links :hover{
+    background-color:var(--buttons);
+}
 button{
-    background-color: rgb(6, 119, 153);
+    background-color: var(--buttons);
     margin: 5px;
-    padding: 5px 5px;
+    padding: 7px 5px;
     border-radius: 5px;
     color: black;
     font-weight: bold;
@@ -327,5 +347,5 @@ button{
 }
 
 button:hover{
-    background-color: rgb(7, 66, 121);
+    background-color: rgb(37, 37, 202);
 }

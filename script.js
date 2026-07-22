@@ -9,7 +9,7 @@ function changeHeading(){
 }
 
 function changeStyle(){
-    document.getElementById("course") .style.color = "var(--third)";
+    document.getElementById("course") .style.color = "var(--buttons)";
     document.getElementById("course") .style.fontSize = "20px";
     console.log("Style Changed");
 }
